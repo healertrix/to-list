@@ -1,0 +1,191 @@
+body{
+   font-size:20px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: black;
+   color:aliceblue;
+   overflow-x: hidden;
+
+}
+
+/* checkbox style */
+.check {
+  -webkit-appearance: none; /*hides the default checkbox*/
+  height: 20px;
+  width: 20px;
+  
+  transition: 0.10s;
+  background-color: #FE0006;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+}
+
+.check:checked {
+  background-color: #0E9700;
+}
+
+.check:before {
+  content: "✖";
+}
+.check:checked:before {
+  content: "✔";
+}
+
+.check:hover {
+  cursor: pointer; 
+  opacity: 0.8;
+}
+/* li style  */
+
+h1{
+   text-align:center;
+   text-decoration: underline;
+}
+ul{
+  margin-top: 2.1em;
+ list-style-type:none;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: space-around;
+ gap: 1em;
+ 
+}
+
+li{
+  
+  background-color:rgba(0, 0, 0, 0.274);
+
+    /* box-shadow: inset -12px -8px 40px #464646; */
+    /* box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+              0 20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+              0 0 10px rgba(0, 0, 0, 0.1); */
+
+              /* box-shadow: 5px 5px rgba(0, 98, 90, 0.4),
+              10px 10px rgba(0, 98, 90, 0.3),
+              15px 15px rgba(0, 98, 90, 0.2),
+              20px 20px rgba(0, 98, 90, 0.1),
+              25px 25px rgba(0, 98, 90, 0.05); */
+              box-shadow: inset -12px -8px 40px #464646;
+               box-shadow: 0 20px 50px rgba(43, 62, 91, 0.7);
+    word-break: break-word;
+    text-align: left;
+}
+li:hover{
+  /* box-shadow: inset -12px -8px 40px #464646; */
+  /* box-shadow: 5px 10px 20px #888888c2; */
+  /* box-shadow: 0 -20px 15px -10px rgba(53, 4, 68, 0.397) inset,
+              0 20px 15px -10px rgba(2, 9, 34, 0.644) inset,
+              0 0 10px rgba(42, 2, 48, 0.466); */
+               box-shadow: 5px 5px rgba(0, 98, 90, 0.4),
+              10px 10px rgba(0, 98, 90, 0.3),
+              15px 15px rgba(0, 98, 90, 0.2),
+              20px 20px rgba(0, 98, 90, 0.1),
+              25px 25px rgba(0, 98, 90, 0.05);
+}
+
+.list-content{
+  display: flex;
+  margin-left: 2.5em;
+  /* padding: 1em; */
+ display: flex; 
+ /* margin-top: -1.2em; */
+}
+.done{
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.button-delete{
+  background-color:#1502163a;
+  border: none;
+  box-shadow: inset -12px -8px 40px #464646;
+}
+.button-delete:hover{
+
+  width:2.6em;
+  box-shadow: 5px 10px 20px #e60808c2;
+  cursor:pointer;
+  border: 0.5px solid rgba(252, 252, 252, 0.178);
+  
+}
+/* adder */
+.adder{
+  display: flex;
+  justify-content: center;
+ gap:1em;
+ margin:2em;
+  
+}
+#add-bttn {
+   background-color:#0311010c;
+  border: none;
+box-shadow: 0 -20px 15px -10px rgba(39, 219, 84, 0.911) inset,
+              0 20px 15px -10px rgba(14, 221, 211, 0.877) inset,
+              0 0 10px rgba(90, 190, 22, 0.466); 
+}
+#add-bttn:hover {
+   background-color:#0311010c;
+  border: none;
+box-shadow: 0 -20px 15px -10px rgba(29, 248, 0, 0.911) inset,
+              0 20px 15px -10px rgba(0, 255, 242, 0.986) inset,
+              0 0 10px rgba(0, 255, 221, 0.986); 
+              
+}
+
+#textarea{
+  width:30em;
+  font-size:0.9em;
+  border: none;
+  padding:0.3em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+  text-align: center;
+  margin: 2em;
+}
+
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: 0 -20px 15px -10px rgba(3, 248, 215, 0.979) inset,
+              0 20px 15px -10px rgba(0, 52, 238, 0.959) inset,
+              0 0 10px #06f7a6f5;
+    -webkit-box-shadow:  0 -20px 15px -10px rgba(84, 43, 231, 0.637) inset,
+              0 20px 15px -10px rgba(6, 169, 245, 0.979) inset,
+              0 0 10px rgba(10, 39, 53, 0.466);
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(241, 238, 238, 0.945); 
+
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.986); 
+}
+
+.animater{
+  transition: all 0.4s ;
+}
+
+.animater-add{
+  transform: translateY(35rem) rotateZ(5deg);
+  /* opacity: 0; */
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 15px;
+  }
+}
